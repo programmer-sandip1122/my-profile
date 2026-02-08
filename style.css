@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  
+}
+
+.navbar {
+    width: 20%;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+ul a:hover {
+    color: #2563eb; /* blue color on hover */
+}
+
+/* Underline animation on hover */
+ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+
+ul a:hover::after {
+    width: 100%;
+}
+
+
+#img {
+    height: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50rem;
+    top: 5rem;
+}
+
+#aboutme {
+    font-size: 1.5rem;
+    height: 50vh;
+    width: 55%;
+
+    margin-left: 1rem;
+
+}
+
+#name {
+    font-size: 3rem;
+    color: black;
+}
+
+.myskill {}
+
+.box {
+    height: 4rem;
+    width: 0.4rem;
+    background-color: #0ea5e9;
+    position: absolute;
+    left: 44.5rem;
+}
+
+.box1 {
+    width: 80%;             
+    height: 0.5rem;
+    background-color: #0ea5e9;
+    position: absolute;
+    left: 5rem;
+    bottom: 11.5rem;
+}
+.list{
+    height: 6rem;
+    width: 0.5rem;
+    background-color:#0ea5e9;
+    position: absolute;
+    left: 5rem;
+    bottom: 6rem;
+}
+
+.list3{
+    height: 6rem;
+    width: 0.5rem;
+    background-color: #0ea5e9;
+    position: absolute;
+    right: 13rem;
+    bottom: 6rem;
+}
+#fontendlogo{
+   height: 8rem;
+   position: absolute;
+   bottom: 0rem;
+   border: 2px solid #0ea5e9;
+   border-radius: 1rem;
+}
+#backendlogo{
+    height: 8rem;
+    width: 13rem;
+   position: absolute;
+   right: 6rem;
+   bottom: 0rem;
+     border: 2px solid #0ea5e9;
+   border-radius: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+.describingmyskill {
+    position: absolute;
+    top: 50rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f4f6f8;
+}
+
+/* Card style for both frontend & backend */
+.fontend,
+.backend {
+    width: 48%;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.fontend:hover,
+.backend:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+.fontend h3,
+.backend h3 {
+    text-transform: capitalize;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Paragraph text */
+.fontend p,
+.backend p {
+    color: #374151;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .describingmyskill {
+        flex-direction: column;
+    }
+
+    .fontend,
+    .backend {
+        width: 100%;
+    }
+}
